@@ -1,0 +1,642 @@
+/*GERAL*/
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: Arista Pro;
+    src: url('Arista-Pro-Light-trial.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: none;
+    font-family: Roboto;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal > .container-modal {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 5% auto;
+    padding: 50px 200px;
+    background: #fff;
+  }
+  .container-modal>img{
+     width: 180px;
+    margin-left: 110px;
+    margin-top: -50px;
+    
+  }
+  .container-campos{
+    margin-left: 0px;
+    width: 454px;
+    float: left;
+  }
+  .container-cadastro,.container-login {
+    width: 200px;
+    float: left;
+    background: white;
+    border-right: 2px solid black;
+  }
+  .container-login{
+    
+    
+  }
+  .container-login h1,.container-cadastro h1{
+    font-size: 20px;
+    margin: 0px 25%;
+
+  }
+  .container-login input{
+    border: 1px solid black;
+    margin-bottom: 10px;
+
+  }
+  .container-login button, .container-cadastro a{
+    margin: 20px 20%;
+    background-color: #8AC53F;
+    border: none;
+    font-weight: bold;
+    padding: 5px 15px ;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  .container-cadastro>.bt-cadastro{
+      text-decoration: none;
+      color: black;
+      margin: 50px 5px;
+      
+      
+  }
+  .container-cadastro{
+    float: right;
+    border: none;
+    margin-left: 50px;
+  }
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: 20px;
+    left: 1260px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+    z-index: 0;
+  }
+
+/* INÍCIO HEADER */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+
+    width: 100%;
+    height: 60px;
+    padding-top: 15px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(180deg, black, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.3)); */
+    position: fixed;
+    position: absolute;
+}
+
+.header li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: Arista Pro;
+    /* box-shadow: inset 0 0 1em #ffffff, 0 0 1em #ffffff; */
+    /* box-shadow: 0 0 1em #ffffff; */
+    border-radius: 8px;
+}
+
+.header li a:hover {
+    color: #37d147;
+}
+
+.header li a:active {
+    color: rgb(156, 14, 14);
+    text-decoration: underline;
+}
+
+.header li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    /* margin-top: -25px; */
+    margin-left: 180px;
+}
+
+.lista-left{
+    float: left;
+    margin-left: -11%;
+}
+
+.lista-rigth{
+    margin-right: -6.3%;
+    float: right;
+}
+
+.text-select {
+    color: rgb(240, 171, 25)
+}
+
+.fixo{
+    background-image: linear-gradient(180deg, black, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.3));
+}
+
+/* FIM HEADER */
+
+/* INÍCIO BANNER */
+.banner{
+    width: 100%;
+    height: 625px;
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.05), rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(https://i.ibb.co/6FSM8X7/nutricao-1024x682.jpg);
+    /* filter: brightness(95%); */
+    /* background-image: url(https://www.glutenfreebrasil.com/wp-content/uploads/2020/07/nutricao_de_precisao.jpg); */
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: solid 2px black; */
+}
+
+.banner h2{
+    color: #ffffff;
+    font-family: Roboto;
+    /* font-weight: bolder; */
+    font-size: 24px;
+}
+
+/* FIM DO BANNER */
+
+
+
+.bloco-azul-right {
+    height: 400px;
+    width: 50.1%;
+    float: right;
+    background-color: #1D3557;
+    border-bottom-left-radius: 200px;
+    /* margin-left: 50%; */
+    /* position: absolute; */
+}
+
+.bloco-azul-right h2 {
+    margin-top: 50px;
+    /* margin-left: -70px; */
+    font-family: Arista Pro;
+    font-size: 56px;
+    color: #ffffff;
+    /* float: left; */
+}
+
+.bloco-azul-right p {
+    margin-top: 40px;
+    text-align: justify;
+    /* text-align: left; */
+    font-family: Roboto;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.img-nutrion{
+    width: 50%;
+    height: 350px;
+    align-items: center;
+    /* float: le; */
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-nutrion img{
+    width: 100%;
+    background-size: cover;
+}
+
+.img-torneio{
+    width: 50%;
+    height: 400px;
+    /* padding-left: 10%; */
+    margin-top: -50px;
+    align-items: center;
+    float: right;
+    margin-bottom: 100px;
+    /* background-color: #1D3557; */
+    
+}
+
+#torneio{
+    border-bottom-right-radius: 200px;
+}
+
+.img-torneio img{
+    width: 100%;
+    background-size: cover;
+}
+
+.teste{
+    width: 100%;
+    background-image: url(https://i.ibb.co/VmC6Tvp/teste.png);
+    /* background-size: cover; */
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.bloco-azul-left {
+    margin-top: -50px;
+    height: 400px;
+    width: 50%;
+    float: left;
+    background-color: #1D3557;
+    border-top-right-radius: 200px;
+}
+
+.bloco-azul-left h2 {
+    margin-top: 50px;
+    font-family: Arista Pro;
+    font-size: 56px;
+    color: #ffffff;
+}
+
+.bloco-azul-left p {
+    margin-top: 40px;
+    font-family: Roboto;
+    text-align: justify;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.texto-verde-h2 {
+    font-family: Arista Pro;
+    font-size: 40px;
+    color: #37d147;
+}
+
+.texto-verde {
+    font-family: Arista Pro;
+    font-size: 56px;
+    color: #37d147;
+}
+
+.titulo-azul-left {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100px;
+    width: 50%;
+    float: left;
+    background-color: #1D3557;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.titulo-azul-right {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100px;
+    width: 50%;
+    float: left;
+    /* background-color: #1D3557; */
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-azul-left h2 {
+    float: left;
+    font-family: Arista Pro;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.container-cards-nutri {
+    width: 90%;
+    height: 400px;
+    padding-left: 10%;
+    background-color: #999;
+    display: block;
+    /* margin-bottom: 100px; */
+    /* float: center; */
+    margin-left: 50px;
+}
+
+.cards-nutri {
+    background-position: center;
+    background-size: cover;
+    background-color: #1D3557;
+    background-image: url(http://www.nutjessicaribeiro.com.br/wp-content/uploads/2016/10/WhatsApp-Image-2016-10-30-at-14.34.17.jpeg);
+    width: 250px;
+    float: left;
+    margin-right: 89.6px;
+    margin-bottom: 150px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #999;
+    /* flex-direction: column; */
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+#cards-nutri-2{
+    background-image: url(https://i.ibb.co/vm6XWT9/image.png);
+}
+
+#cards-nutri-3{
+    background-image: url(https://i.ibb.co/RNnrZdQ/image.png);
+    margin-right: 0px;
+}
+
+
+.caixa-info-nutri-card {
+
+    background-color: #1D3557;
+    padding: 10px;
+    color: #ffffff;
+    width: 250px;
+    height: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+.cards-nutri h3 {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.cards-nutri p {
+    font-family: Roboto;
+    /* padding: 10%; */
+    text-align: left;
+    font-size: 16px;
+    /* margin-left: 10%; */
+}
+
+.sobrenome-verde{
+    font-family: Roboto;
+    color: #37d147;
+}
+
+.seta{
+    width: 25px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.seta img{
+    width: 100%;
+}
+
+.seta-2{
+    width: 25px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-left: 20px;
+}
+
+.seta-2 img{
+    width: 100%;
+}
+/* INÍCIO FOOTER */
+
+.containerFooter {
+    width: 90%;
+    margin: auto;
+}
+
+.footer {
+    margin-top: 1725px;
+    width: 100%;
+    height: 300px;
+    /* background: #1D3557; */
+    background-color: #1D3557;
+    padding-top: 100px;
+    border-top: 5px solid #37d147;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 17px;
+    font-style: oblique;
+}
+
+.footer-img{
+    width: 17%;
+    height: 200px;
+    background-image: url(https://i.ibb.co/xLtc7pM/aaa.png);
+    float: left;
+    margin-right: 7.5%;
+}
+ .link {
+    width: 17%;
+    float: left;
+}
+
+.link h3 {
+    color: #37d147;
+    font-family: Arista Pro;
+    font-size: 32px;
+
+}
+
+.link ul {
+    margin-left: -40px;
+    list-style: none;
+
+}
+
+.link li a {
+    font-family: Roboto;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link li a:hover {
+    color: #37d147;
+}
+
+.link li a:active {
+    text-decoration: underline;
+}
+
+.link li {
+    display: inline;
+    /* margin: 0px; */
+} 
+
+ .contato {
+    margin-left: 0px;
+    width: 23%;
+    float: left;
+}
+
+.contato h3 {
+    color: #37d147;
+    font-family: Arista Pro;
+    font-size: 32px;
+
+}
+
+.contato ul {
+
+    list-style: none;
+
+}
+
+.contato li a {
+
+    text-decoration: none;
+    color: #37d147;
+    font-family: Arista Pro;
+    font-size: 32px;
+    /* font-weight: lighter; */
+}
+
+.contato li a:hover {
+    color: #ffffff;
+}
+
+.contato li a:active {
+    text-decoration: underline;
+}
+
+.contato li {
+    font-family: Roboto;
+    display: inline;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.endereco {
+    /* margin-top: 65px; */
+    margin-left: -40px;
+    width: 32%;
+    float: right;
+    
+}
+
+.endereco h3 {
+    color: #37d147;
+    font-family: Arista Pro;
+    font-size: 32px;
+
+}
+
+.endereco ul {
+
+    list-style: none;
+
+}
+
+.endereco li a {
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.endereco li a:active {
+    text-decoration: underline;
+}
+
+.endereco li {
+    display: inline;
+    margin: 0px;
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.copyright h4 {
+    background-color: #1D3557;
+    padding-bottom: 15px;
+    width: 100%;
+    font-family: Roboto;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+} 
+
+/* FIM FOOTER */
+
+.btn {
+    margin-left: 42%;
+    position: fixed;
+    float: right;
+    margin-top: 70px;
+    border-radius: 90px;
+    height: 4000px;
+    width: 5000px;
+    background-color: rgba(255, 248, 220, 0.165);
+    padding-top: 5px;
+}

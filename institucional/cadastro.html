@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="cadastro.css">
+
+	<title>NutriON - Cadastro</title>
+</head>
+
+<body>
+	TO DO - DIFERENCIAR OS TIPOS DE USUARIO
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<!-- <form action="#" class="ca-cadastro" id="form_cadastro"> -->
+				<!-- <br>
+				<br> -->
+				<!-- <br>
+				<br>
+				<br><br> -->
+				<!-- <br><br><br> -->
+			<!-- 	<h1> <span style="color: #1D3557;">Cadastrar</span> <span style="color: #1dcf01;">Nutri</span></h1> -->
+
+				<!-- <h1>Cadastrar Nutri</h1> -->
+				<!-- <input id="nomeEmpresa" name="nomeEmpresa" type="text" placeholder="Nome..." 
+					maxlength="45" /> -->
+				<!-- <input id="cnpjEmpresa" name="cnpjEmpresa" type="text" placeholder="CNPJ"  minlength="20" maxlength="20"/> -->
+				<!-- <input id="emailEmpresa" name="emailEmpresa" type="email" placeholder="Email..."  maxlength="45" />
+				<input id="telefoneEmpresa" name="telefoneEmpresa" type="text" placeholder="Telefone..." 
+					minlength="11" maxlength="13"  /> -->
+				<!-- <input id="cep" name="cep" type="text" placeholder="CEP"  minlength="9" maxlength="9"/> -->
+				<!-- <input id="bairro" name="bairro" type="text" placeholder="Bairro"/> -->
+				<!-- <input id="complemento" name="complemento" type="text" placeholder="Complemento" /> -->
+				<!-- <input id="logradouro" name="crn" type="text" placeholder="CRN..." /> -->
+				<!-- <input id="logradouro" name="senha" type="password" placeholder="Senha..." /> -->
+				<!-- <input id="numero" name="numero" type="password" placeholder="Confirmar Senha..."/> -->
+				<!-- <select name="uf">
+					<option value="-">Estado</option>
+					<option value="AC">Acre</option>
+					<option value="AL">Alagoas</option>
+					<option value="AP">Amapá</option>
+					<option value="AM">Amazonas</option>
+					<option value="BA">Bahia</option>
+					<option value="CE">Ceará</option>
+					<option value="DF">Distrito Federal</option>
+					<option value="ES">Espírito Santo</option>
+					<option value="GO">Goiás</option>
+					<option value="MA">Maranhão</option>
+					<option value="MT">Mato Grosso</option>
+					<option value="MS">Mato Grosso do Sul</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="PA">Pará</option>
+					<option value="PB">Paraíba</option>
+					<option value="PR">Paraná</option>
+					<option value="PE">Pernambuco</option>
+					<option value="PI">Piauí</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="RN">Rio Grande do Norte</option>
+					<option value="RS">Rio Grande do Sul</option>
+					<option value="RO">Rondônia</option>
+					<option value="RR">Roraima</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="SP">São Paulo</option>
+					<option value="SE">Sergipe</option>
+					<option value="TO">Tocantins</option>
+				</select> -->
+				<!-- <button id="sign-up" type="submit" value="Cadastrar" class="btn-green">Cadastrar</button> -->
+		<!-- 	</form> -->
+		</div>
+
+		<div class="form-container sign-in-container">
+			<form action="#" class="info_login" id="form_login">
+				<h1> <span style="color: #1D3557;">Cadastrar</span> <span style="color: #1dcf01;">Usuário</span></h1>
+				<input id="nomeEmpresa" name="nomeEmpresa" type="text" placeholder="Nome..." 
+					maxlength="45" />
+				<!-- <input id="cnpjEmpresa" name="cnpjEmpresa" type="text" placeholder="CNPJ"  minlength="20" maxlength="20"/> -->
+				<input id="emailEmpresa" name="emailEmpresa" type="email" placeholder="Email..."  maxlength="45" />
+				<input id="telefoneEmpresa" name="telefoneEmpresa" type="text" placeholder="Telefone..." 
+					minlength="11" maxlength="13"  />
+				<!-- <input id="cep" name="cep" type="text" placeholder="CEP"  minlength="9" maxlength="9"/> -->
+				<!-- <input id="bairro" name="bairro" type="text" placeholder="Bairro"/> -->
+				<!-- <input id="complemento" name="complemento" type="text" placeholder="Complemento" /> -->
+				<input id="logradouro" name="senha" type="password" placeholder="Senha..." />
+				<!-- <input id="numero" name="numero" type="password" placeholder="Confirmar Senha..."/> -->
+				<!-- <input id="emailEmpresa_login" type="email" name="emailEmpresa_login" placeholder="Email" />
+				<input id="senhaEmpresa_login" type="password" name="senhaEmpresa_login" placeholder="Senha" /> -->
+				<button id="login" type="login" name="login" onclick="cadastrar()" style="background-color: red;">Entrar</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Gostaria de ser nosso Usuário?</h1>
+					<p>Faça seu cadastro e tenha uma experiência única que te trará inúmeros resultados</p>
+					<button class="ghost" id="signIn">Cadastre-se</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>É nutricionista? <br> Trabalhe conosco!</h1>
+					<p>Faça o seu cadastro e venha trabalhar com a gente, tendo uma experiência única com seus clientes.</p>
+					<button class="ghost" id="signUp">Cadastre-se</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+<script>
+
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+
+	function cadastrar() {
+		var nome = document.getElementById("nomeEmpresa").value;
+		var email = document.getElementById("emailEmpresa").value;
+		var telefone = document.getElementById("telefoneEmpresa").value;
+		var senha = document.getElementById("logradouro").value;
+	
+	let body = {
+        	"nomeUsuario": `${nome}`,
+        	"telefoneUsuario": `${telefone}`,
+        	"emailUsuario": `${email}`,
+        	"senhaUsuario": `${senha}`,
+        	"avaliacao": 0.0,
+        	"autenticado": false,
+			"endereco": null
+		}
+		
+		fetch("http://localhost:8010/pacientes",
+			{
+				method: "POST",
+				headers: {
+					'Content-Type': "application/json"
+				},
+				body: JSON.stringify(body)
+			})
+		.then(resposta => {
+		if (resposta.status == 201){
+			window.location.href = "index.html";
+		}else {
+			window.alert("Dados de cadastro inválidos!")
+		}
+		 });
+		
+	}
+
+</script>

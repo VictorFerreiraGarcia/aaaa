@@ -1,0 +1,162 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+.menuHamburger{
+    display: none;
+}
+.ul{
+   display: none; 
+}
+.viewMobile{
+    display: none;
+}
+.viewDesktop{
+    display: block;
+}
+@media only screen and (max-width: 500px) {
+    .viewDesktop{
+        display: none;
+    }
+    .viewMobile{
+        display: block;
+    }
+    .logoBanner{
+        position: absolute;
+        top: 250px;
+        left: 26%;
+        z-index: 0;
+    }
+    #img-banner-mobile{
+        width: 100%;
+    }
+    #menuHamburger{
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      
+    }
+    #menuHamburger>img{
+        width: 50px;
+    }
+
+    ul{
+        width: 455px;
+        
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        display: none;
+        background-color: #1D3557;
+    }
+    ul li {
+        padding: 20px;
+        color: white;
+        border: 1px solid black;
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    #menuOpen:target{
+        display: block;
+    }
+    #menuClose:target{
+        display: none;
+    }
+    
+    .principal-container{
+        height: 1000px;
+    }
+    .box-who-ami, .box-campeonato, .box-profissionais, .box-vantagens{
+        width: 300px;
+        margin-top: 50px;
+        background-color: #1D3557;
+        padding: 25px;
+        border-radius: 0px 60px 60px 0px;
+    }
+    .box-vantagens{
+        height: 400px;
+        margin-left: 100px;
+        border-radius: 60px 0px 0px 60px;
+    }
+    .box-profissionais{
+        height: 50px;
+        width: 350px;
+    }
+    .box-profissionais span{
+        font-size: 35px;   
+        color: white;     
+        width: 350px;
+    }
+
+    #text-prof{
+        color: #8AC53F;
+    }
+    .box-who-ami>p, .box-campeonato>p{
+        color: white;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .box-who-ami>h1, .box-vantagens>span, .box-campeonato>span{
+        font-size: 50px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .img-who-ami>img{
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 8%;
+    }
+    .box-vantagens>p{
+        color: white;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .img-vantagens>img{
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    .img-campeonato{
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 8%;
+    }
+    .cards-nutri-mobile, .cards-nutri-2-mobile{
+        background-position: center;
+        background-size: cover;
+        background-color: #1D3557;
+        background-image: url(http://www.nutjessicaribeiro.com.br/wp-content/uploads/2016/10/WhatsApp-Image-2016-10-30-at-14.34.17.jpeg);
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 23%;
+        margin-right: auto;
+        height: 400px;
+        padding: 10px;
+        justify-content: center;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px #999; 
+        text-align: center;
+        border-radius: 10px;
+        
+    }
+    .cards-nutri-2-mobile{
+        background-image: url(https://i.ibb.co/VmC6Tvp/teste.png) ;
+    }
+    .caixa-info-nutri-card-mobile{
+        width: 200px;
+        
+        background-color: #1D3557;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+        color: white;
+
+    }
+
+}
